@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugins')
   " Nerdtree
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
