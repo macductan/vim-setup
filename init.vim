@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugins')
 
   " Nerdtree
   Plug 'preservim/nerdtree'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 
