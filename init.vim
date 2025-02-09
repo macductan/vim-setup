@@ -3,12 +3,12 @@ call plug#begin('~/.config/nvim/plugins')
   " Theme
   Plug 'folke/tokyonight.nvim'
 
-  " Nerdtree
+  " File browser
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'ryanoasis/vim-devicons'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-  Plug 'scrooloose/nerdtree-project-plugin'
+  Plug 'PhilRunninger/nerdtree-visual-selection'
 
 call plug#end()
 
