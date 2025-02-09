@@ -8,6 +8,7 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'ryanoasis/vim-devicons'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+  Plug 'scrooloose/nerdtree-project-plugin'
 
 call plug#end()
 
