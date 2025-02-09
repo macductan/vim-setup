@@ -1,0 +1,2 @@
+" Show number
+set number
