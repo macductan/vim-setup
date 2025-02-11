@@ -18,6 +18,9 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
 
+  " Terminal
+  Plug 'voldikss/vim-floaterm'
+
 call plug#end()
 
 " Tokyonight theme
@@ -28,3 +31,4 @@ execute 'source '.nvim_settings_dir.'defautl.vim'
 execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'ftf.vim'
 execute 'source '.nvim_settings_dir.'vim-airline.vim'
+execute 'source '.nvim_settings_dir.'vim-floaterm.vim'
