@@ -10,6 +10,10 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'PhilRunninger/nerdtree-visual-selection'
 
+  " Status bar
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+
 call plug#end()
 
 " Tokyonight theme
@@ -18,3 +22,4 @@ colorscheme tokyonight-moon
 let nvim_settings_dir = '~/.config/nvim/settings/'
 execute 'source '.nvim_settings_dir.'defautl.vim'
 execute 'source '.nvim_settings_dir.'nerdtree.vim'
+execute 'source '.nvim_settings_dir.'vim-airline.vim'
