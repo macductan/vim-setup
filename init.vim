@@ -21,6 +21,9 @@ call plug#begin('~/.config/nvim/plugins')
   " Terminal
   Plug 'voldikss/vim-floaterm'
 
+  " Code completion
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 " Tokyonight theme
@@ -32,3 +35,4 @@ execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'ftf.vim'
 execute 'source '.nvim_settings_dir.'vim-airline.vim'
 execute 'source '.nvim_settings_dir.'vim-floaterm.vim'
+execute 'source '.nvim_settings_dir.'coc.vim'
