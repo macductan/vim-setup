@@ -25,6 +25,9 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'jiangmiao/auto-pairs' " Auto pairs
 
+  " Code syntax highlight
+  Plug 'pangloss/vim-javascript'
+
 call plug#end()
 
 " Tokyonight theme
