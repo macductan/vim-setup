@@ -45,9 +45,12 @@ call plug#end()
 colorscheme tokyonight-moon
 
 let nvim_settings_dir = '~/.config/nvim/settings/'
+execute 'source '.nvim_settings_dir.'coc.vim'
+execute 'source '.nvim_settings_dir.'copilot.vim'
 execute 'source '.nvim_settings_dir.'defautl.vim'
-execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'ftf.vim'
+execute 'source '.nvim_settings_dir.'nerdtree.vim'
 execute 'source '.nvim_settings_dir.'vim-airline.vim'
 execute 'source '.nvim_settings_dir.'vim-floaterm.vim'
-execute 'source '.nvim_settings_dir.'coc.vim'
+execute 'source '.nvim_settings_dir.'vim-javascript.vim'
+execute 'source '.nvim_settings_dir.'vimspector.vim'
