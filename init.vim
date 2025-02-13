@@ -21,8 +21,9 @@ call plug#begin('~/.config/nvim/plugins')
   " Terminal
   Plug 'voldikss/vim-floaterm'
 
-  " Code completion
+  " Code intellisense
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'jiangmiao/auto-pairs' " Auto pairs
 
 call plug#end()
 
