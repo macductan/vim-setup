@@ -34,6 +34,11 @@ call plug#begin('~/.config/nvim/plugins')
   " Git
   Plug 'airblade/vim-gitgutter'
 
+  " Copilot
+  Plug 'github/copilot.vim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'CopilotC-Nvim/CopilotChat.nvim'
+
 call plug#end()
 
 " Tokyonight theme
