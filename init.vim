@@ -28,6 +28,9 @@ call plug#begin('~/.config/nvim/plugins')
   " Code syntax highlight
   Plug 'pangloss/vim-javascript'
 
+  " Debugger
+  Plug 'puremourning/vimspector'
+
 call plug#end()
 
 " Tokyonight theme
