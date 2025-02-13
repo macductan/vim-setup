@@ -1,6 +1,8 @@
-" Show number
-set number
+" Mappings
+nnoremap <F2> :set shiftwidth=2 tabstop=2<CR>
+nnoremap <F4> :set shiftwidth=4 tabstop=4<CR>
 
+set number
 set mouse=a                 " Enable mouse
 set expandtab               " Tab setting 
 set tabstop=4               " Tab setting 
@@ -29,3 +31,15 @@ if has('win32')
 else
   set clipboard=unnamedplus
 endif
+
+" Auto reload content changed outside
+au CursorHold,CursorHoldI * checktime
+au FocusGained,BufEnter * :checktime
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+    \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == ''
+      \ | checktime 
+    \ | endif
+autocmd FileChangedShellPost *
+    \ echohl WarningMsg 
+    \ | echo "File changed on disk. Buffer reloaded."
+    \ | echohl None

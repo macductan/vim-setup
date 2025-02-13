@@ -31,6 +31,9 @@ call plug#begin('~/.config/nvim/plugins')
   " Debugger
   Plug 'puremourning/vimspector'
 
+  " Git
+  Plug 'airblade/vim-gitgutter'
+
 call plug#end()
 
 " Tokyonight theme
