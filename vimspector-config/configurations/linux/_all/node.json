@@ -1,0 +1,48 @@
+{
+    "configurations": {
+        "Launch Node.js": {
+            "adapter": "js-debug",
+            "filetypes": [
+                "javascript",
+                "typescript"
+            ],
+            "configuration": {
+                "request": "launch",
+                "runtimeExecutable": "tsx",
+                "program": "${file}",
+                "cwd": "${workspaceRoot}",
+                "stopOnEntry": false,
+                "type": "pwa-node"
+            },
+            "breakpoints": {
+                "exception": {
+                    "all": "N",
+                    "uncaught": "N"
+                }
+            }
+        },
+        "Debug Yarn Dev": {
+            "adapter": "js-debug",
+            "filetypes": [
+                "javascript",
+                "typescript"
+            ],
+            "configuration": {
+                "request": "launch",
+                "type": "pwa-node",
+                "cwd": "${workspaceRoot}",
+                "runtimeExecutable": "yarn",
+                "runtimeArgs": [
+                    "dev"
+                ],
+                "console": "integratedTerminal"
+            },
+            "breakpoints": {
+                "exception": {
+                    "all": "N",
+                    "uncaught": "N"
+                }
+            }
+        }
+    }
+}

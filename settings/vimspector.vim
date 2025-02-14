@@ -9,3 +9,6 @@ nmap      <Leader>dr <Plug>VimspectorRestart
 nmap      <Leader>de <Plug>VimspectorStepOut
 nmap      <Leader>di <Plug>VimspectorStepInto
 nmap      <Leader>do <Plug>VimspectorStepOver
+
+let g:vimspector_install_gadgets = ['vscode-js-debug']
+let g:vimspector_base_dir = expand( '$HOME/.config/nvim/vimspector-config' )
