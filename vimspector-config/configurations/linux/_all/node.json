@@ -35,6 +35,7 @@
                 "runtimeArgs": [
                     "dev"
                 ],
+                "stopOnEntry": false,
                 "console": "integratedTerminal"
             },
             "breakpoints": {
