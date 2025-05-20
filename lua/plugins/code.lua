@@ -1,6 +1,7 @@
 return {
   -- Automatically set tabstop and shiftwidth
-  { "tpope/vim-sleuth",
+  { 
+    "tpope/vim-sleuth",
     config = function()
       -- Set tabstop=2 for new files
       vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
@@ -15,4 +16,23 @@ return {
       })
     end 
   },
+
+  {
+    "pocco81/auto-save.nvim",
+    opts = {
+      execution_message = {
+        message = function()
+          return ("AutoSave: saved at " .. vim.fn.strftime("%H:%M:%S"))
+        end,
+      },
+      -- Focus change events
+      trigger_events = {
+        "FocusLost",          -- when window/buffer loses focus
+        "BufLeave",           -- when leaving a buffer
+        "VimLeavePre",        -- when exiting vim
+        "InsertLeave",        -- also keep standard insert mode exit saving
+        "TextChanged",        -- also keep standard text change saving
+      },
+    },
+  }
 }
