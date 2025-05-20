@@ -25,14 +25,6 @@ return {
           return ("AutoSave: saved at " .. vim.fn.strftime("%H:%M:%S"))
         end,
       },
-      -- Focus change events
-      trigger_events = {
-        "FocusLost",          -- when window/buffer loses focus
-        "BufLeave",           -- when leaving a buffer
-        "VimLeavePre",        -- when exiting vim
-        "InsertLeave",        -- also keep standard insert mode exit saving
-        "TextChanged",        -- also keep standard text change saving
-      },
     },
   }
 }
