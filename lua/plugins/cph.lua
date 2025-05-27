@@ -5,6 +5,7 @@ return {
     ft = { "python" },
     config = function()
       vim.g["cph#lang"] = "python"
+      vim.b["copilot_enabled"] = false
     end,
     keys = {
       {
