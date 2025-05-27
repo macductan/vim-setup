@@ -1,0 +1,8 @@
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+
+git clone git@github_home.com:macductan/vim-setup.git ~/.config/nvim
+cd ~/.config/nvim
+gco lazy-vim
