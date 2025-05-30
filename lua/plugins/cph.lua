@@ -19,6 +19,17 @@ return {
         desc = "CphReceive",
       },
       {
+        "<leader>cpa",
+        function()
+          if vim.bo.filetype == "python" then
+            vim.cmd(":CphTest")
+          else
+            vim.notify("This command is only available in Python files", vim.log.levels.WARN)
+          end
+        end,
+        desc = "CphTest All",
+      },
+      {
         "<leader>cpt",
         function()
           if vim.bo.filetype == "python" then
