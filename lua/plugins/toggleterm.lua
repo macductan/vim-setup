@@ -2,50 +2,45 @@ return {
   {
     'akinsho/toggleterm.nvim',
     version = "*",
-    config = function()
-      require("toggleterm").setup({})
-      
-      -- Add terminal mode mapping to make <C-\><C-n> work with <C-w>
-      vim.api.nvim_set_keymap('t', '<C-w>', [[<C-\><C-n><C-w>]], {noremap = true, silent = true})
-    end,
+    config = true,
     keys = {
       {
-        "<leader>tt",
+        "<leader>mt",
         function()
           vim.cmd(":ToggleTerm direction=horizontal")
         end,
         desc = "ToggleTerm Horizontal",
       },
       {
-        "<leader>tv",
+        "<leader>mv",
         function()
           vim.cmd(":ToggleTerm direction=vertical")
         end,
         desc = "ToggleTerm Vertical",
       },
       {
-        "<leader>tf",
+        "<leader>mf",
         function()
           vim.cmd(":ToggleTerm direction=float")
         end,
         desc = "ToggleTerm Float",
       },
       {
-        "<leader>tl",
+        "<leader>ml",
         function()
           vim.cmd(":ToggleTerm direction=tab")
         end,
         desc = "ToggleTerm Tab",
       },
       {
-        "<leader>ta",
+        "<leader>ma",
         function()
           vim.cmd(":ToggleTermToggleAll")
         end,
         desc = "ToggleTerm All",
       },
       {
-        "<leader>tn",
+        "<leader>mn",
         function()
           local number = vim.fn.input("Term number: ")
           if number ~= "" then
@@ -56,7 +51,6 @@ return {
         end,
         desc = "ToggleTerm Number",
       },
-      
     }
   },
 }

@@ -1,6 +1,6 @@
 return {
   -- Automatically set tabstop and shiftwidth
-  { 
+  {
     "tpope/vim-sleuth",
     config = function()
       -- Set tabstop=2 for new files
@@ -14,7 +14,7 @@ return {
           end
         end,
       })
-    end 
+    end
   },
 
   {
