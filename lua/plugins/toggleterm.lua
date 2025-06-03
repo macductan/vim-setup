@@ -5,6 +5,10 @@ return {
     config = true,
     keys = {
       {
+        "<leader>m",
+        desc = "ToggleTerm",
+      },
+      {
         "<leader>mt",
         function()
           vim.cmd(":ToggleTerm direction=horizontal")
