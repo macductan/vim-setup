@@ -8,6 +8,10 @@ return {
     end,
     keys = {
       {
+        "<leader>cp",
+        desc = "Cph",
+      },
+      {
         "<leader>cpr",
         function()
           if vim.bo.filetype == "python" then
