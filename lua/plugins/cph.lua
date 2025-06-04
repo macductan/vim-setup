@@ -61,6 +61,6 @@ return {
         end,
         desc = "CphEdit",
       },
-    }
+    },
   },
 }

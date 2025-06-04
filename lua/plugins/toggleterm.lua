@@ -1,6 +1,6 @@
 return {
   {
-    'akinsho/toggleterm.nvim',
+    "akinsho/toggleterm.nvim",
     version = "*",
     config = true,
     keys = {
@@ -55,6 +55,6 @@ return {
         end,
         desc = "ToggleTerm Number",
       },
-    }
+    },
   },
 }

@@ -14,12 +14,9 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
-vim.api.nvim_create_autocmd({"FileType"}, {
-  pattern = { "python" },
-  callback = function ()
-    vim.b["copilot_enabled"] = false
-  end
-})
+vim.g.copilot_filetypes = {
+  ["*"] = true,
+  python = false,
+}
 
-vim.api.nvim_set_keymap('t', '<C-w>', [[<C-\><C-n><C-w>]], {noremap = true, silent = true})
-
+vim.api.nvim_set_keymap("t", "<C-w>", [[<C-\><C-n><C-w>]], { noremap = true, silent = true })
