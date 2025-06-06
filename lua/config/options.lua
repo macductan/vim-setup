@@ -5,3 +5,8 @@
 vim.opt.winbar = "%=%m %f"
 
 vim.opt.wrap = true
+
+vim.g.copilot_filetypes = {
+  ["*"] = true,
+  python = false,
+}
