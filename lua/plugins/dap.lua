@@ -57,6 +57,14 @@ return {
           runtimeExecutable = "tsx",
           cwd = "${workspaceFolder}",
         },
+        {
+          type = "pwa-node",
+          request = "attach",
+          name = "Attach",
+          processId = require("dap.utils").pick_process,
+          cwd = vim.fn.getcwd(),
+          sourceMaps = true,
+        },
       }
 
       dap.configurations.javascript = config
