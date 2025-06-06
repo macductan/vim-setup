@@ -20,3 +20,5 @@ vim.g.copilot_filetypes = {
 }
 
 vim.api.nvim_set_keymap("t", "<C-w>", [[<C-\><C-n><C-w>]], { noremap = true, silent = true })
+
+vim.opt.wrap = true
