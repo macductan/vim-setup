@@ -14,15 +14,6 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
-vim.g.copilot_filetypes = {
-  ["*"] = true,
-  python = false,
-}
-
-vim.api.nvim_set_keymap("t", "<C-w>", [[<C-\><C-n><C-w>]], { noremap = true, silent = true })
-
-vim.opt.wrap = true
-
 -- Set the title of the Neovim window based on the first non-option argument
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()

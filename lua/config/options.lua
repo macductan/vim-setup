@@ -4,3 +4,4 @@
 
 vim.opt.winbar = "%=%m %f"
 
+vim.opt.wrap = true
