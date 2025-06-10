@@ -10,3 +10,5 @@ vim.g.copilot_filetypes = {
     ["*"] = true,
   python = false,
 }
+
+vim.g.autoformat = false
