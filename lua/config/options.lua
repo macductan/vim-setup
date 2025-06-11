@@ -6,6 +6,9 @@ vim.opt.winbar = "%=%m %f"
 
 vim.opt.wrap = true
 
+-- Di chuyển giữa các dòng
+vim.opt.whichwrap:append("<,>,h,l")
+
 vim.g.copilot_filetypes = {
   ["*"] = true,
   python = false,
