@@ -38,16 +38,16 @@ return {
         {
           type = "pwa-node",
           request = "launch",
-          name = "Launch currunt file with tsx",
+          name = "Launch with tsx",
           runtimeExecutable = "tsx",
-          program = "${file}",
           cwd = "${workspaceFolder}",
         },
         {
           type = "pwa-node",
           request = "launch",
-          name = "Launch with tsx",
+          name = "Launch currunt file with tsx",
           runtimeExecutable = "tsx",
+          program = "${file}",
           cwd = "${workspaceFolder}",
         },
         {
