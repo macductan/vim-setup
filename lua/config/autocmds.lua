@@ -23,3 +23,12 @@ vim.api.nvim_create_autocmd("VimEnter", {
     vim.opt.titlestring = title
   end,
 })
+
+-- Cấu hình cho file .http
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "http",
+  callback = function()
+    require("kulala").set_selected_env("local")
+    vim.opt_local.winbar = '%= %#Comment#ENV: %{luaeval(\'require("kulala").get_selected_env() or "none"\')} %= %f %m'
+  end,
+})
