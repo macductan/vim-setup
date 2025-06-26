@@ -1,6 +1,10 @@
 return {
   {
     "mfussenegger/nvim-dap",
+    keys = {
+      { "<F5>", "<cmd>lua require('dap').toggle_breakpoint()<cr>", desc = "Toggle Breakpoint" },
+      { "<F6>", "<cmd>lua require('dap').continue()<cr>", desc = "Continue" },
+    },
     config = function()
       -- load mason-nvim-dap here, after all adapters have been setup
       if LazyVim.has("mason-nvim-dap.nvim") then
@@ -22,11 +26,11 @@ return {
       local config = {
         {
           type = "pwa-node",
-          request = "launch",
-          runtimeExecutable = "yarn",
-          runtimeArgs = { "dev" },
-          name = "Launch with Yarn Dev",
-          cwd = "${workspaceFolder}",
+          request = "attach",
+          name = "Attach",
+          processId = require("dap.utils").pick_process,
+          cwd = vim.fn.getcwd(),
+          sourceMaps = true,
         },
         {
           type = "pwa-node",
@@ -49,14 +53,6 @@ return {
           runtimeExecutable = "tsx",
           program = "${file}",
           cwd = "${workspaceFolder}",
-        },
-        {
-          type = "pwa-node",
-          request = "attach",
-          name = "Attach",
-          processId = require("dap.utils").pick_process,
-          cwd = vim.fn.getcwd(),
-          sourceMaps = true,
         },
       }
 
